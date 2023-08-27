@@ -1,0 +1,70 @@
+<!-- span elements width is equal to content width -->
+<h1>
+    <span>G</span>
+    <span>O</span>
+    <span>O</span>
+    <span>G</span>
+    <span>L</span>
+    <span>E</span>
+</h1>
+
+<!-- if we want to apply something on character then span tag used -->
+<!-- span tag is used to give colour for individual character  -->
+<style>
+    h1 {
+        text-align: center;
+        font-size: 90px;
+        padding-top: 200px;
+    }
+
+    /* we can use id and classes for the same purpose */
+    h1 span:nth-child(1) {
+        color: red;
+    }
+
+    h1 span:nth-child(2) {
+        color: orange;
+    }
+
+    h1 span:nth-child(3) {
+        color: blue;
+    }
+
+    h1 span:nth-child(4) {
+        color: yellow;
+    }
+
+    h1 span:nth-child(5) {
+        color: green;
+    }
+
+    h1 span:last-child {
+        color: gray;
+    }
+</style>
+
+
+<div>
+    <ul>
+        <li> <span>hello world</span></li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+    </ul>
+</div>
+
+<style>
+    ul li:nth-child(2n) {
+        background-color: red;
+    }
+
+    /* ul li:nth-child(2n+1){
+        background-color: rgb(240, 123, 220);
+    } */
+    ul li span:nth-child(2n+1) {
+        background-color: green;
+    }
+</style>

@@ -1,0 +1,39 @@
+<!-- absolute , text on images -->
+<!-- absolute and fixed elements can have  z-index -->
+<!-- z-index:0 default, range -9999 to 9999 -->
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .banner {
+        /* border: solid; */
+        position: relative;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .banner-text{
+        /* border: solid; */
+        width: 600px;
+        position: absolute;
+        left: 50%;
+        bottom: 40%;
+        margin-left: -300px;
+    }
+    body{
+        height: 1500px;
+    }
+</style>
+
+<div class="banner">
+    <img src="https://sslimages.shoppersstop.com/sys-master/root/h41/h33/30190022098974/EOSS-Main-Banner-Web--hp--page--2023-06--15-new-sale.jpg" alt="">
+
+    <div class="banner-text">
+        <h1>Fashion World</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis corrupti, eum, accusamus omnis commodi molestias esse aut voluptatibus nobis corporis adipisci rem praesentium quisquam earum quia a debitis reiciendis officiis!
+        </p>
+    </div>
+</div>
